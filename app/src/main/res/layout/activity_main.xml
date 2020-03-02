@@ -24,7 +24,8 @@
         android:id="@+id/txtString"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Write" />
+        android:hint="Write"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/buttonModifyValues"

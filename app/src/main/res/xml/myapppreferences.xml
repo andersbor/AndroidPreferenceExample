@@ -15,6 +15,7 @@
             android:summary="On (true) or off (false)"
             android:title="Switch" />
 
+        <!-- http://www.edumobile.org/android/listpreference-example/ -->
         <ListPreference
             android:entries="@array/listentries"
             android:entryValues="@array/listvalues"

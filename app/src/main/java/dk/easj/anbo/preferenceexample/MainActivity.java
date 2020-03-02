@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickDisplay(View view) {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
         Map map = pref.getAll();
+        Log.d("MINE", map.toString());
         Toast.makeText(this, map.toString(), Toast.LENGTH_LONG).show();
     }
 
