@@ -3,7 +3,7 @@ package dk.easj.anbo.preferenceexample;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickDisplay(View view) {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
-        Map map = pref.getAll();
+        Map<String, ?> map = pref.getAll();
         Log.d("MINE", map.toString());
         Toast.makeText(this, map.toString(), Toast.LENGTH_LONG).show();
     }

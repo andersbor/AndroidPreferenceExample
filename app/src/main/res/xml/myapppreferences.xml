@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:title="Category 1">
 
@@ -33,10 +33,10 @@
             android:singleLine="true"
             android:summary="Enter a string"
             android:title="Edit Text" />
-        <RingtonePreference
+        <!--RingtonePreference
             android:key="ringtonePref"
             android:summary="Select a ringtone"
-            android:title="Ringtone" />
+            android:title="Ringtone" /-->
     </PreferenceCategory>
     <PreferenceScreen android:summary="Click to to to second Preference Screen">
 
@@ -47,4 +47,4 @@
             android:summary="Enter a string"
             android:title="Edit Text (second screen)" />
     </PreferenceScreen>
-</PreferenceScreen>
+</androidx.preference.PreferenceScreen>
